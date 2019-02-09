@@ -5,7 +5,7 @@ const cors = require('cors')
 const app = express();
 
 const server = require('http').Server(app);
-const io = require('socket.io')(Server);
+const io = require('socket.io')(server);
 
 mongoose.connect(
     "mongodb+srv://roboto:AGsb5F3OJxZjvQWH@omnistack-week-cekqy.mongodb.net/test?retryWrites=true",{
